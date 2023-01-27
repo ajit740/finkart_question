@@ -1,0 +1,15 @@
+function twoSum(nums,taget)
+{
+    for(let i=0;i<nums.length;i++)
+    {
+        for(let j=2;j<nums.length;j++)
+        {
+            if(nums[i]+nums[j]==target){
+                return[nums[i],nums[j]];
+            
+            }
+        }
+    }
+    return "no two nums in the lisr add upto the targe.";
+}
+console.log(twoSum([1,2,3,4,5],6));
